@@ -1,9 +1,9 @@
-# scrapybook
+# Scrapybook
 
-### this will be used as learning practice from scrapy book, all rights reserved.
+### This will be used as learning practice from scrapy book, all rights reserved.
 
-Environment: Python 2.7 + AWS Linux VM
+Environment: python 2.7 + AWS Linux VM
 
-Instruction: Docker + Vagrant 1.9.2
+Instruction: docker + vagrant 1.9.2
 
-Followed the installation steps on scrapy book, any issue please refer: https://github.com/scalingexcellence/scrapybook/issues 
+Follow the installation steps on book, any issue please refer: https://github.com/scalingexcellence/scrapybook/issues 
