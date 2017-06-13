@@ -21,6 +21,7 @@ class PropertiesItem(Item):
 	# Calculated fields
 	images = Field()
 	location = Field()
+	count = Field()
 	
 	# Housekeeping fields
 	url = Field()

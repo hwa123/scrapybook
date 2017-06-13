@@ -15,7 +15,8 @@ from properties.items import PropertiesItem
 class OrgCrawlSpider(CrawlSpider):
     name = 'org_crawl'
     allowed_domains = ['web']
-    
+    count = 1    
+ 
     # Start on the first index page
     start_urls = (
 	'http://web:9312/properties/index_00000.html',
@@ -45,7 +46,11 @@ class OrgCrawlSpider(CrawlSpider):
         l.add_xpath('image_urls', '//*[@itemprop="image"][1]/@src',    
                     MapCompose(lambda i: urlparse.urljoin(response.url, i)))
                                                                            
-        # Housekeeping fields                                             
+        # Calculated fields
+	l.add_value('count', self.count)
+	self.count += 1
+
+	# Housekeeping fields                                             
         l.add_value('url', response.url)                                 
         l.add_value('project', self.settings.get('BOT_NAME'))           
         l.add_value('spider', self.name)                               
