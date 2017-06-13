@@ -90,9 +90,9 @@ ITEM_PIPELINES = {
     #'properties.pipelines.es.EsWriter': 800,
     #'properties.pipelines.geo.GeoPipeline': 400,
     #'properties.pipelines.geo2.GeoPipeline': 400,
-     'properties.pipelines.mysql2.MysqlWriter': 700,
-     'properties.pipelines.mysql1.MysqlWriter': 600,
-    #'properties.pipelines.redis.RedisCache': 300,
+   # 'properties.pipelines.mysql2.MysqlWriter': 700,
+   # 'properties.pipelines.mysql1.MysqlWriter': 600,
+     'properties.pipelines.redis.RedisCache': 300,
     #'properties.pipelines.computation.UsingBlocking': 500,
     #'properties.pipelines.legacy.Pricing': 600,
 }
